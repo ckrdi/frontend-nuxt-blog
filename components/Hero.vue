@@ -1,10 +1,9 @@
 <template>
-  <section class="hero is-success is-fullheight-with-navbar">
+  <section id="hero" class="hero is-success is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">
-        <p class="title">Hello there, I'm Agung.</p>
-        <p class="subtitle">A self-taught web developer.</p>
-        <button class="button is-success is-light">Get Started</button>
+        <p class="title">Cokorda Agung.</p>
+        <p class="subtitle">A self-taught front-end developer.</p>
       </div>
     </div>
   </section>

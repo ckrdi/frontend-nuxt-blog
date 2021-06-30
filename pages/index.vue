@@ -1,12 +1,8 @@
 <template>
-  <main>
+  <main class="has-text-centered">
     <Hero />
-
-    <Projects />
-
     <About />
-
-    <Footer />
+    <Projects />
   </main>
 </template>
 
