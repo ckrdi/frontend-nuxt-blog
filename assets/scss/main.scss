@@ -3,17 +3,84 @@
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  color: $is-link;
 }
-
+// style every button
 .button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
-
+// logo in navbar
 .logo {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  color: $is-link;
 }
+// photo in hero component
+.imageProfile {
+  width: 300px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+// every heading
+.main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+// every description
+.main-description {
+  margin-bottom: 12px;
+}
+// button located in project component
+.project-button {
+  margin-top: 20px;
+}
+// to add a custom background color in project component
+.projects {
+  position: relative;
+}
+.success {
+  background-color: $is-link;
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: 100%;
+}
+// change color to white
+.is-white {
+  color: white;
+}
+// center links in footer component
+.links {
+  margin: 36px auto;
+
+  .network_icon {
+    margin: auto 20px;
+  }
+}
+// change label color in contact component
+$label-color: $is-link;
+$label-weight: 400;
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+// to add custom background color in footer component
+.main-footer {
+  position: relative;
+
+  .footer-back {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+  }
+}
+// change footer background color
+$footer-background-color: hsl(0, 0%, 95%);
 
 @import '~bulma/bulma.sass';

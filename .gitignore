@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Resume and profile image
+Resume.pdf
+photoImage.jpeg

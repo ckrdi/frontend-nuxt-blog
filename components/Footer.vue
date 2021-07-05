@@ -1,10 +1,26 @@
 <template>
-  <div>
+  <div class="main-footer">
+    <div class="footer-back"></div>
     <footer class="footer has-text-centered">
-      <NuxtLink to="/">
-        <div class="logo">C</div>
-      </NuxtLink>
-      <div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <div class="tile is-child notification is-link">
+            <div class="columns is-vcentered">
+              <div class="column is-8">
+                <p class="main-title is-white">Do you want to ask something?</p>
+              </div>
+              <div class="column">
+                <NuxtLink to="/contact">
+                  <button class="button is-rounded is-link is-light">
+                    Contact me
+                  </button>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
         <a
           href="https://www.linkedin.com/in/cokorda-agung-yudhana-505a9b66/"
           target="_blank"

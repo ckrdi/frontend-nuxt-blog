@@ -1,10 +1,12 @@
 <template>
   <div class="projects">
-    <section class="success"></section>
+    <div class="success"></div>
     <section class="section is-medium">
       <div class="container">
-        <h2>My Projects</h2>
-        <p>Collection of my recents personal projects.</p>
+        <h2 class="main-title is-white">My Projects</h2>
+        <p class="main-description is-white">
+          Collection of my recents personal projects.
+        </p>
         <div class="columns is-multiline">
           <div v-for="post in posts" :key="post.id" class="column is-one-third">
             <Card :posty="post" />
@@ -12,7 +14,7 @@
         </div>
       </div>
       <a href="https://github.com/ckrdi">
-        <button class="button is-rounded is-link is-outlined">
+        <button class="button is-rounded is-link is-outlined project-button">
           See more on Github
         </button>
       </a>
