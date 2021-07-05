@@ -1,16 +1,20 @@
 <template>
-  <b-navbar fixed-top spaced>
+  <b-navbar fixed-top spaced class="navbar">
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <strong>Cokorda Agung</strong>
+        <div class="logo">C</div>
       </b-navbar-item>
     </template>
     <template #end>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        Home
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/contact' }">
-        Contact
+      <b-navbar-item tag="div">
+        <div class="buttons">
+          <NuxtLink to="/" class="button is-rounded is-link is-inverted">
+            Home
+          </NuxtLink>
+          <NuxtLink to="/contact" class="button is-rounded is-link is-inverted">
+            Contact
+          </NuxtLink>
+        </div>
       </b-navbar-item>
     </template>
   </b-navbar>
@@ -19,5 +23,3 @@
 <script>
 export default {}
 </script>
-
-<style></style>

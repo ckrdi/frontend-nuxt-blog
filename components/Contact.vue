@@ -1,36 +1,44 @@
 <template>
-  <section>
-    <b-field label="Name" :label-position="labelPosition">
-      <b-input></b-input>
-    </b-field>
+  <div class="section">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Your name" />
+      </div>
+    </div>
 
-    <b-field label="Email" :label-position="labelPosition">
-      <b-input type="email"> </b-input>
-    </b-field>
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" placeholder="Your email" />
+      </div>
+    </div>
 
-    <b-field label="Subject" :label-position="labelPosition">
-      <b-input> </b-input>
-    </b-field>
+    <div class="field">
+      <label class="label">Subject</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Subject" />
+      </div>
+    </div>
 
-    <b-field label="Message" :label-position="labelPosition">
-      <b-input type="textarea"></b-input>
-    </b-field>
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Your message"></textarea>
+      </div>
+    </div>
 
-    <b-field
-      ><!-- Label left empty for spacing -->
-      <p class="control">
-        <b-button label="Send message" type="is-success" />
-      </p>
-    </b-field>
-  </section>
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-rounded is-link is-inverted">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-rounded is-link is-inverted">Cancel</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      labelPosition: 'on-border',
-    }
-  },
-}
+export default {}
 </script>

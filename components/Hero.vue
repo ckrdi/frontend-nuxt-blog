@@ -1,16 +1,10 @@
 <template>
-  <section id="hero" class="hero is-success is-fullheight-with-navbar">
+  <section class="hero is-fullheight-with-navbar is-link">
     <div class="hero-body">
       <div class="container">
-        <p class="title">Cokorda Agung.</p>
-        <p class="subtitle">A self-taught front-end developer.</p>
+        <h1>Cokorda Agung.</h1>
+        <p>A self-taught front-end developer.</p>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style></style>

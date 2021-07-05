@@ -1,24 +1,22 @@
 <template>
-  <div class="card">
-    <div class="card-image">
-      <figure class="image">
-        <img
-          src="https://bulma.io/images/placeholders/1280x960.png"
-          alt="Placeholder image"
-        />
-      </figure>
-    </div>
-    <!-- <div class="card-content">
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-        iaculis mauris.
+  <div class="card" v-if="posty">
+    <a :href="posty.link">
+      <div class="card-image">
+        <figure class="image">
+          <img
+            :src="require(`~/assets/images/${posty.image}.png`)"
+            alt="website image"
+          />
+        </figure>
       </div>
-    </div> -->
+    </a>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    posty: Object,
+  },
+}
 </script>
-
-<style></style>
