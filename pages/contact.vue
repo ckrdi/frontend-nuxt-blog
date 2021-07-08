@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="main-title">Contact me</h2>
       <p class="main-description">
-        If there is something you want to ask, just send me a message.
+        If there's something you want to ask, just send me a message.
       </p>
       <div class="has-text-left columns">
         <div class="column"></div>

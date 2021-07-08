@@ -58,7 +58,12 @@
 
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-rounded is-link is-inverted">Submit</button>
+          <button class="button is-rounded is-link is-loading" v-if="isLoading">
+            Submit
+          </button>
+          <button class="button is-rounded is-link is-inverted" v-else>
+            Submit
+          </button>
         </div>
         <div class="control">
           <button
@@ -89,6 +94,7 @@ export default {
         message: '',
       },
       error: null,
+      isLoading: false,
     }
   },
   methods: {
@@ -100,12 +106,14 @@ export default {
     },
 
     handleSubmit: async function (e) {
+      this.isLoading = true
       this.error = null
       e.preventDefault()
 
       try {
         const response = await axios.post(
           'https://desolate-mountain-91022.herokuapp.com/messages',
+          // 'http://localhost:1337/messages',
           this.newMessage
         )
         this.newMessage.name = ''
@@ -115,6 +123,8 @@ export default {
         // console.log(response)
       } catch (error) {
         this.error = error
+      } finally {
+        this.isLoading = false
       }
     },
   },
